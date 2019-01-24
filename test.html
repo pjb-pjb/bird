@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>JS实现的往下不断流动的网页背景</title>
+</head>
+<body background="img/di.jpg">
+<script language="JavaScript">
+    <!-- Begin
+    var backgroundOffset = 0;    //背景图片的偏移量
+    var bgObject = eval('document.body');    //得到文挡本身的对象
+    function scrollBG(maxSize) {    //这个函数就是滚动背景的核心
+        backgroundOffset = backgroundOffset + 1;   //将背景偏移加1点
+        if (backgroundOffset > maxSize) backgroundOffset = 0;  //如果偏移量超过了最大值则回零
+        bgObject.style.backgroundPosition = "0 " + backgroundOffset; //设定背景的偏移量，使其生效
+    }
+    var ScrollTimer = window.setInterval("scrollBG(307)", 64); //设定每次移动背景之间的间隔。
+    // End -->
+</script>
+<div style="position: absolute; top: 200px; left:300px;">
+    <table border="0" width="100%" cellspacing="0" cellpadding="0">
+        <tr>
+            <td width="100%"><b>流动的背景是不是很漂亮？</b></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
